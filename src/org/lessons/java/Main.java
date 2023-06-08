@@ -17,6 +17,7 @@ public class Main {
         farm[3] = new Dolphin();
 
         for (Animal a : farm) {
+            System.out.println("Nome animale: " + a.getClass().getSimpleName());
             a.sleep();
             a.eat();
             a.noise();
