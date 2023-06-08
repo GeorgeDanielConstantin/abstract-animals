@@ -1,6 +1,6 @@
 package org.lessons.java;
 
-public class Eagle extends Animal {
+public class Eagle extends Animal implements CanFly {
     @Override
     public void sleep() {
         super.sleep();
@@ -14,5 +14,10 @@ public class Eagle extends Animal {
     @Override
     public void eat() {
         System.out.println("Meat");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("I'm flying");
     }
 }
